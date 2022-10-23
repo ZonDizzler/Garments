@@ -12,4 +12,6 @@ package distjc.garments;
 public interface Garment {
     
     void typeOfGarment();
+    void setVariant(String variantName);
+    String getVariant();
 }

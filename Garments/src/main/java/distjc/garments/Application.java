@@ -13,12 +13,13 @@ public class Application {
 
     private Garment garment;
 
-    public Application(GarmentFactory factory) {
-        garment = factory.someGarment();
+    public Application(GarmentFactory factory, String printName) {
+        garment = factory.someGarment(printName);
     }
 
     public void revealContent() {
         garment.typeOfGarment();
+        System.out.println(garment.getVariant());
     }
 
 }

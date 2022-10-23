@@ -10,7 +10,21 @@ package distjc.garments;
  * @author soblab
  */
 public class Top implements Garment {
-    
-    
-    
+
+    @Override
+    public void typeOfGarment() {
+        System.out.println("A top is a garment worn on the torso.");
+    }
+    String variantName;
+
+    @Override
+    public void setVariant(String variantName) {
+        this.variantName = variantName;
+    }
+
+    @Override
+    public String getVariant() {
+        return variantName;
+    }
+
 }

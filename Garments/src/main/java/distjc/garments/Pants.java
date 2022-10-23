@@ -11,4 +11,22 @@ package distjc.garments;
  */
 public class Pants implements Garment {
     
+
+    @Override
+    public void typeOfGarment() {
+        System.out.println("Pants are a garment worn on the legs.");
+    }
+    
+    String variantName;
+    
+    @Override
+    public void setVariant(String variantName) {
+        this.variantName = variantName;
+    }
+
+    @Override
+    public String getVariant() {
+        return variantName;
+    }
+    
 }
